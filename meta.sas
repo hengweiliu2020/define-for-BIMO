@@ -159,13 +159,11 @@ create table defds as
 select distinct dataset, label  from attributes;
 
 data defds; set defds;
-domain=dataset;
-if dataset='ADSL' then repeating='No';
-else repeating='Yes';
+repeating='No';
 isref='No';
 purpose='Analysis';
-struct='ADAM OTHER';
-class='One record per siteid, per arm, per cohort';
+class='ADAM OTHER';
+struct='One record per siteid, per arm, per cohort';
 label=label;
 if dataset='ADSL' then order=1;
 else order=100+_n_;
@@ -200,7 +198,7 @@ end;
 orgdetl=' ';
 mandatory='Yes';
 role=' ';
-order=.;
+order=_n_;
 docref1=' ';
 run;
 

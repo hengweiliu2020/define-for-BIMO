@@ -13,7 +13,7 @@
    ODMVersion='1.3.2'                                                                          
    FileOID='Study-ABC-123-ADAM-data'                                                       
    FileType='Snapshot'                                                                         
-   CreationDateTime='2021-10-11T13:50:54'>                                                               
+   CreationDateTime='2021-10-11T20:12:28'>                                                               
                                                                                                
    <!-- ******************************************  -->                                        
    <!-- OID conventions used in this file:          -->                                        
@@ -51,47 +51,47 @@
       <!-- Lists Datasets (ItemGroupDef)                                  -->
       <!-- ************************************************************** -->
 
-      <ItemGroupDef OID="IG.CLINSITE" Name="CLINSITE" SASDatasetName="CLINSITE" Repeating="Ye" Purpose="Analysis" def:Class="One record per siteid, per arm, per cohort" def:ArchiveLocationID="LF.CLINSITE" def:Structure="ADAM OTHER" Domain="CLINSITE" IsReferenceData="No" >
+      <ItemGroupDef OID="IG.CLINSITE" Name="CLINSITE" SASDatasetName="CLINSITE" Repeating="No" Purpose="Analysis" def:Class="ADAM OTHER" def:ArchiveLocationID="LF.CLINSITE" def:Structure="One record per siteid, per arm, per cohort" IsReferenceData="No" >
          <Description><TranslatedText xml:lang="en">BIMO summary-level clinical site data</TranslatedText></Description>
-         <ItemRef ItemOID="IT.CLINSITE.POSTAL" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.NDA" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.ENDPTYPE" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.SITEID" OrderNumber="." Mandatory="Yes" KeySequence="1" />
-         <ItemRef ItemOID="IT.CLINSITE.TITLE" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.EMAIL" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.NSAE" OrderNumber="." Mandatory="Yes" MethodOID="MT.CLINSITE.NSAE" />
-         <ItemRef ItemOID="IT.CLINSITE.COUNTRY" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.SAFPOP" OrderNumber="." Mandatory="Yes" MethodOID="MT.CLINSITE.SAFPOP" />
-         <ItemRef ItemOID="IT.CLINSITE.FINLDISC" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.SPONSOR" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.STUDYID" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.LASTNAME" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.TRTEFFS" OrderNumber="." Mandatory="Yes" MethodOID="MT.CLINSITE.TRTEFFS" />
-         <ItemRef ItemOID="IT.CLINSITE.COHORT" OrderNumber="." Mandatory="Yes" KeySequence="3" />
-         <ItemRef ItemOID="IT.CLINSITE.NOIMPDEV" OrderNumber="." Mandatory="Yes" MethodOID="MT.CLINSITE.NOIMPDEV" />
-         <ItemRef ItemOID="IT.CLINSITE.ENDPOINT" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.PHONE" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.CENSOR" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.SAE" OrderNumber="." Mandatory="Yes" MethodOID="MT.CLINSITE.SAE" />
-         <ItemRef ItemOID="IT.CLINSITE.FAX" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.SCREEN" OrderNumber="." Mandatory="Yes" MethodOID="MT.CLINSITE.SCREEN" />
-         <ItemRef ItemOID="IT.CLINSITE.DEATH" OrderNumber="." Mandatory="Yes" MethodOID="MT.CLINSITE.DEATH" />
-         <ItemRef ItemOID="IT.CLINSITE.SPONCNT" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.FRSTNAME" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.STATE" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.STREET1" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.IND" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.SUPPNUM" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.DISCTRT" OrderNumber="." Mandatory="Yes" MethodOID="MT.CLINSITE.DISCTRT" />
-         <ItemRef ItemOID="IT.CLINSITE.TRTEFFR" OrderNumber="." Mandatory="Yes" MethodOID="MT.CLINSITE.TRTEFFR" />
-         <ItemRef ItemOID="IT.CLINSITE.MINITIAL" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.UNDERIND" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.ARM" OrderNumber="." Mandatory="Yes" KeySequence="2" />
-         <ItemRef ItemOID="IT.CLINSITE.BLA" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.CITY" OrderNumber="." Mandatory="Yes"   />
-         <ItemRef ItemOID="IT.CLINSITE.DISCSTUD" OrderNumber="." Mandatory="Yes" MethodOID="MT.CLINSITE.DISCSTUD" />
-         <ItemRef ItemOID="IT.CLINSITE.IMPDEV" OrderNumber="." Mandatory="Yes" MethodOID="MT.CLINSITE.IMPDEV" />
-         <ItemRef ItemOID="IT.CLINSITE.STREET" OrderNumber="." Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.ARM" OrderNumber="1" Mandatory="Yes" KeySequence="2" />
+         <ItemRef ItemOID="IT.CLINSITE.BLA" OrderNumber="2" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.CENSOR" OrderNumber="3" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.CITY" OrderNumber="4" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.COHORT" OrderNumber="5" Mandatory="Yes" KeySequence="3" />
+         <ItemRef ItemOID="IT.CLINSITE.COUNTRY" OrderNumber="6" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.DEATH" OrderNumber="7" Mandatory="Yes" MethodOID="MT.CLINSITE.DEATH" />
+         <ItemRef ItemOID="IT.CLINSITE.DISCSTUD" OrderNumber="8" Mandatory="Yes" MethodOID="MT.CLINSITE.DISCSTUD" />
+         <ItemRef ItemOID="IT.CLINSITE.DISCTRT" OrderNumber="9" Mandatory="Yes" MethodOID="MT.CLINSITE.DISCTRT" />
+         <ItemRef ItemOID="IT.CLINSITE.EMAIL" OrderNumber="10" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.ENDPOINT" OrderNumber="11" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.ENDPTYPE" OrderNumber="12" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.FAX" OrderNumber="13" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.FINLDISC" OrderNumber="14" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.FRSTNAME" OrderNumber="15" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.IMPDEV" OrderNumber="16" Mandatory="Yes" MethodOID="MT.CLINSITE.IMPDEV" />
+         <ItemRef ItemOID="IT.CLINSITE.IND" OrderNumber="17" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.LASTNAME" OrderNumber="18" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.MINITIAL" OrderNumber="19" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.NDA" OrderNumber="20" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.NOIMPDEV" OrderNumber="21" Mandatory="Yes" MethodOID="MT.CLINSITE.NOIMPDEV" />
+         <ItemRef ItemOID="IT.CLINSITE.NSAE" OrderNumber="22" Mandatory="Yes" MethodOID="MT.CLINSITE.NSAE" />
+         <ItemRef ItemOID="IT.CLINSITE.PHONE" OrderNumber="23" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.POSTAL" OrderNumber="24" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.SAE" OrderNumber="25" Mandatory="Yes" MethodOID="MT.CLINSITE.SAE" />
+         <ItemRef ItemOID="IT.CLINSITE.SAFPOP" OrderNumber="26" Mandatory="Yes" MethodOID="MT.CLINSITE.SAFPOP" />
+         <ItemRef ItemOID="IT.CLINSITE.SCREEN" OrderNumber="27" Mandatory="Yes" MethodOID="MT.CLINSITE.SCREEN" />
+         <ItemRef ItemOID="IT.CLINSITE.SITEID" OrderNumber="28" Mandatory="Yes" KeySequence="1" />
+         <ItemRef ItemOID="IT.CLINSITE.SPONCNT" OrderNumber="29" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.SPONSOR" OrderNumber="30" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.STATE" OrderNumber="31" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.STREET" OrderNumber="32" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.STREET1" OrderNumber="33" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.STUDYID" OrderNumber="34" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.SUPPNUM" OrderNumber="35" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.TITLE" OrderNumber="36" Mandatory="Yes"   />
+         <ItemRef ItemOID="IT.CLINSITE.TRTEFFR" OrderNumber="37" Mandatory="Yes" MethodOID="MT.CLINSITE.TRTEFFR" />
+         <ItemRef ItemOID="IT.CLINSITE.TRTEFFS" OrderNumber="38" Mandatory="Yes" MethodOID="MT.CLINSITE.TRTEFFS" />
+         <ItemRef ItemOID="IT.CLINSITE.UNDERIND" OrderNumber="39" Mandatory="Yes"   />
          <def:leaf ID="LF.CLINSITE" xlink:href="CLINSITE.xpt"> <def:title>CLINSITE.xpt</def:title> </def:leaf>
       </ItemGroupDef>
 
